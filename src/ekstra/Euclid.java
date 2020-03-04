@@ -1,4 +1,4 @@
-package Ekstra;
+package ekstra;
 
 public class Euclid {
     public static void gcd(int a,int b){
