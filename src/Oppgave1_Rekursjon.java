@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Oppgave1_Rekursjon {
 
 
@@ -12,8 +15,6 @@ public class Oppgave1_Rekursjon {
         //oppgave 1.2:
         //du kan teste for negative eksponenter i tillegg til exp=0;
         System.out.print("Power: "+pow(4,2)+"\n");
-
-
 
         //Oppgave 1.3: en void metode som reverser et array og så kan vi skrive den ut.
         int [] arr1= {25,9,-100,1,5,-1,30};
@@ -30,6 +31,26 @@ public class Oppgave1_Rekursjon {
 
         //Oppgave 1.5:
         System.out.print("\nPosisjonen av tallet er lik: " +posisjon(arr,-100,0,arr.length));
+
+        /* Oppgave 2.1 */
+        System.out.println("Oppgave 2.1 - Generisk Metode som printer ut elementene til en arraylist av hvilken som helst type");
+        ArrayList<Integer> integerArrayList = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        ArrayList<String> stringArrayList = new ArrayList<>(Arrays.asList("You", "me", "they", "us"));
+        ArrayList<Double> doubleArrayList = new ArrayList<>(Arrays.asList(1.5, 3.87, 6.43, 8.98));
+        Oppgave2.printArraylist(integerArrayList);
+        Oppgave2.printArraylist(stringArrayList);
+        Oppgave2.printArraylist(doubleArrayList);
+
+        System.out.println();
+
+        /* Oppgave 2.2 */
+        System.out.println("Oppgave 2.2 - Generisk Metode som printer ut elementene til et array av hvilken som helst type baklengs");
+        String[] stringArray = {"1.trinn", "2.trinn", "3.trinn", "4.trinn"};
+        Integer[] intArray = {1,2,3,4,5};
+        Double[] doubleArray = {2.3, 3.54, 4.8, 5.89};
+        Oppgave2.printArrayReverse(stringArray);
+        Oppgave2.printArrayReverse(intArray);
+        Oppgave2.printArrayReverse(doubleArray);
 
     }
     //oppgave 1.1
