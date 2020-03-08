@@ -30,9 +30,9 @@ public class Oppgave2_GeneriskProgramming {
         ArrayList<Integer> integerArrayList = new ArrayList<>(Arrays.asList(1,2,3,4,5));
         ArrayList<String> stringArrayList = new ArrayList<>(Arrays.asList("You", "me", "they", "us"));
         ArrayList<Double> doubleArrayList = new ArrayList<>(Arrays.asList(1.5, 3.87, 6.43, 8.98));
-        Oppgave2_GeneriskProgramming.printArraylist(integerArrayList);
-        Oppgave2_GeneriskProgramming.printArraylist(stringArrayList);
-        Oppgave2_GeneriskProgramming.printArraylist(doubleArrayList);
+        printArraylist(integerArrayList);
+        printArraylist(stringArrayList);
+        printArraylist(doubleArrayList);
 
 
 
@@ -41,8 +41,8 @@ public class Oppgave2_GeneriskProgramming {
         String[] stringArray = {"1.trinn", "2.trinn", "3.trinn", "4.trinn"};
         Integer[] intArray = {1,2,3,4,5};
         Double[] doubleArray = {2.3, 3.54, 4.8, 5.89};
-        Oppgave2_GeneriskProgramming.printArrayReverse(stringArray);
-        Oppgave2_GeneriskProgramming.printArrayReverse(intArray);
-        Oppgave2_GeneriskProgramming.printArrayReverse(doubleArray);
+        printArrayReverse(stringArray);
+        printArrayReverse(intArray);
+        printArrayReverse(doubleArray);
     }
 }
