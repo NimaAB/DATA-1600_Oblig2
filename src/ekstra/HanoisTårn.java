@@ -1,4 +1,4 @@
-package Ekstra;
+package ekstra;
 
 public class HanoisTårn {
     static void hanaaisLosning(int platter, char start,char midt,char slutt){
