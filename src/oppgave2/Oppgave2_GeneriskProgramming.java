@@ -14,11 +14,13 @@ public class Oppgave2_GeneriskProgramming {
 
     /** Oppgave 2.2 */
     public static <T> void printArrayReverse(T[] array){
+        if(array.length == 0){
+            return;
+        }
         System.out.println("Original Array: ");
         for(T element:array){
             System.out.print(element + " ");
         }
-
         System.out.println("\nReversed Array:");
         for(int i = array.length-1; i >= 0; i--){
             System.out.print(array[i] + " ");
