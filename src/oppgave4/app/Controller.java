@@ -30,7 +30,7 @@ public class Controller {
         int versjon = -1;
         try {
             versjon = Integer.parseInt(JOptionPane.showInputDialog("Hvilken versjon vil du laste opp?"));
-            selectedFile = new File("D:\\DATA-1600_Oblig2\\src\\oppgave4\\html-v" + versjon + ".txt");
+            selectedFile = new File("html-v" + versjon + ".txt");
         }catch (NumberFormatException nfe){
             error.errorAlert("Error",nfe.getMessage());
         }
@@ -58,7 +58,7 @@ public class Controller {
         File selectedFile = null;
         try {
             int versjon = Integer.parseInt(JOptionPane.showInputDialog("Hvilken versjon vil du lagre det som?"));
-           selectedFile = new File("D:\\DATA-1600_Oblig2\\src\\oppgave4\\html-v"+versjon+".txt");
+           selectedFile = new File("html-v"+versjon+".txt");
         }catch (NumberFormatException e){
             error.errorAlert("Error",e.getMessage());
         }
