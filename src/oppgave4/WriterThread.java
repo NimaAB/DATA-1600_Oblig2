@@ -38,13 +38,12 @@ public class WriterThread extends Task<Void> {
         }
     }
     @Override
-    protected Void call() {
+    public Void call() {
         try{
             Thread.sleep(3000);
         }catch (InterruptedException e){
             e.getStackTrace();
         }
-
         save(text, filePath);
         return null;
     }

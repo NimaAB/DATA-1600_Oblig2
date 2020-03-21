@@ -7,8 +7,8 @@ import java.io.*;
 
 public class ReaderThread extends Task<Void> {
 
-    private File filePath;
-    private HTMLEditor htmlEditor;
+    private final File filePath;
+    private final HTMLEditor htmlEditor;
 
     public ReaderThread(File path, HTMLEditor editor){
         this.filePath = path;
@@ -24,7 +24,7 @@ public class ReaderThread extends Task<Void> {
         editor.setHtmlText(htmlText.toString());
     }
     @Override
-    protected Void call(){
+    public Void call(){
         try{
             Thread.sleep(3000);
             reader(filePath,htmlEditor);
