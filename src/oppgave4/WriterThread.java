@@ -7,15 +7,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class WriterThreat extends Task<Void> {
-    private File filePath;
-    private String text;
+public class WriterThread extends Task<Void> {
+    private final File filePath;
+    private final String text;
 
-    public WriterThreat(String text, File filePath){
+    public WriterThread(String text, File filePath){
         this.text = text;
         this.filePath = filePath;
     }
-    void save(String text, File filePath){
+    private void save(String text, File filePath){
         FileWriter writerParamTo_fWriter;
         BufferedWriter fileWriter = null;
         int numberOfLines = 1;
@@ -38,7 +38,13 @@ public class WriterThreat extends Task<Void> {
         }
     }
     @Override
-    public Void call() {
+    protected Void call() {
+        try{
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.getStackTrace();
+        }
+
         save(text, filePath);
         return null;
     }
