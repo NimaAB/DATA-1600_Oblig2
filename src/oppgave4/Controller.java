@@ -25,16 +25,18 @@ public class Controller {
             selectedFile = new File("D:\\DATA-1600_Oblig2\\src\\oppgave4\\html-v" + versjon + ".txt");
         }catch (NumberFormatException e){
             error.setTitle("Error");
-            error.setHeaderText(e.getMessage());
+            error.setHeaderText(e.toString());
             error.showAndWait();
         }
-        if(selectedFile == null){
+        assert selectedFile !=null;
+        if(selectedFile.exists()){
+            ReaderThreat readerObj = new ReaderThreat(selectedFile);
+            editor.setHtmlText(readerObj.reader(selectedFile));
+        }else{
             error.setTitle("Error");
-            error.setHeaderText("Tilsvarende versjon:" + versjon + "eksisterer ikke!");
+            error.setHeaderText("Tilsvarende versjon: " + versjon + " eksisterer ikke!");
             error.showAndWait();
         }
-        ReaderThreat readerObj = new ReaderThreat(selectedFile);
-        editor.setHtmlText(readerObj.call());
     }
 
     @FXML

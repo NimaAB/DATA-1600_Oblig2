@@ -14,14 +14,13 @@ public class ReaderThreat extends Task<String> {
         this.filePath = path;
     }
 
-    private String reader(File path) throws IOException {
-        String htmlText = "";
+    public String reader(File path) throws IOException {
+        StringBuilder htmlText = new StringBuilder();
         FileReader fileReaderObj = new FileReader(path);
         try(BufferedReader bf = new BufferedReader(fileReaderObj)){
-            while(bf.readLine() != null)
-            htmlText = bf.readLine();
+            htmlText.append(bf.readLine());
         }
-        return htmlText;
+        return htmlText.toString();
     }
     @Override
     public String call() throws IOException {
