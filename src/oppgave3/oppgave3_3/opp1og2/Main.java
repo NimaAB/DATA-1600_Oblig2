@@ -1,14 +1,10 @@
-package Oppgave331;
+package oppgave3.oppgave3_3.opp1og2;
 
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainMetode {
-
-
-
-
+public class Main {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package oppgave3;
+package oppgave3.oppgave3_1og3_2;
 
 public class PhoneAlert implements PhoneAlertModus {
     private PhoneAlertStatus status = new Silent();
