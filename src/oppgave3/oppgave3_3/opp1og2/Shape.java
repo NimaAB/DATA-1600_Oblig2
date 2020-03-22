@@ -5,6 +5,6 @@ import javax.swing.JPanel;
 
 public abstract class Shape extends JPanel {
 
-    public abstract void draw(Graphics g);
+    public abstract void paint(Graphics g);
 
 }

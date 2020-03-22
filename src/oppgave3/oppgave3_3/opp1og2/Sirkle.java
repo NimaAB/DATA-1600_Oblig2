@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Sirkle extends Shape {
 
-    public void draw(Graphics g){
+    public void paint(Graphics g){
         setSize(800,800);
         g.drawOval(200,200,400,400);
     }
