@@ -2,7 +2,7 @@ package oppgave3.oppgave3_3.opp1og2;
 
 import java.awt.*;
 
-public class Rektankel extends Shape {
+public class Rektangel extends Shape {
     @Override
     public void paint(Graphics g) {
         setSize(800,800);

@@ -1,7 +1,4 @@
-Oppgave 3.3:
+Oppgave 3.3-1):
 
-1)
 Metoden draw() bør være abstrakt, fordi både figuren sirkel og rektangel i spørsmålet arver fra Shape abstrakt klassen
 og de skal tegnes. dette hjelper med å ha en høy kvalitets kode.
-
-2)

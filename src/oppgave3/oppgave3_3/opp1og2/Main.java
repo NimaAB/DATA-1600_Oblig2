@@ -11,7 +11,7 @@ public class Main {
         // lagrer rektankele i shape listen. Og viser den
 
         List<Shape> shapes = new ArrayList<Shape>();
-        Rektankel objRekt = new Rektankel();
+        Rektangel objRekt = new Rektangel();
         Sirkle objSirkel = new Sirkle();
         shapes.add(objRekt);
         shapes.add(objSirkel);
